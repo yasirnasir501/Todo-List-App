@@ -5,10 +5,11 @@ import {AiTwotoneEdit} from 'react-icons/ai'
 
 
 const TodoList = (props) => {
-    const {itemList} = props;
+    const {itemList, deleItem} = props;
   return (
     <>
-    {itemList.map((val) => {
+    { //itemList?.length !== 0 ?
+     itemList.map((val) => {
         return(
             <div className='item'>
                 <div>
@@ -21,12 +22,14 @@ const TodoList = (props) => {
                     </div>
 
                     <div className='delete'>
-                        <MdDeleteForever />
+                        <MdDeleteForever onClick={() => deleItem(val.id)}/>
                     </div>
                 </div>
             </div>
         )
-    })}
+    })
+    // : 'No Item Display...'
+    }
     </>
   )
 }
