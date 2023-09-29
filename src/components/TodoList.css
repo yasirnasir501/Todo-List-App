@@ -1,0 +1,33 @@
+.item{
+    background-color: #f1f1f1;
+    height: 30px;
+    width: 30vw;
+    margin-left: 120px;
+    margin-top: 20px;
+    display: flex;
+    border-radius: 5px;
+
+}
+
+.txt{
+    color: #000000;
+    margin-left: 20px;
+    font-weight: 600;
+    font-family: 'Mooli', sans-serif;
+}
+
+.btns{
+    display: flex;
+    margin-left: 50px;
+    gap: 10px;
+    
+}
+
+.edit{
+    cursor: pointer;
+    color: #16c23b;
+}
+.delete{
+    cursor: pointer;
+    color: #d11313;
+}
